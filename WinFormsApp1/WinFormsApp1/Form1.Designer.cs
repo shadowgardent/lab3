@@ -50,6 +50,22 @@
             textBoxidMax = new TextBox();
             label6 = new Label();
             textBoxscoreMAX = new TextBox();
+            label10 = new Label();
+            label11 = new Label();
+            label12 = new Label();
+            label13 = new Label();
+            label14 = new Label();
+            label15 = new Label();
+            label16 = new Label();
+            label17 = new Label();
+            textBoxA = new TextBox();
+            textBoxB = new TextBox();
+            textBoxBPLUS = new TextBox();
+            textBoxCPLUS = new TextBox();
+            textBoxC = new TextBox();
+            textBoxDPLUS = new TextBox();
+            textBoxF = new TextBox();
+            textBoxD = new TextBox();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             SuspendLayout();
@@ -117,7 +133,6 @@
             textBoxid.Name = "textBoxid";
             textBoxid.Size = new Size(100, 23);
             textBoxid.TabIndex = 1;
-            textBoxid.TextChanged += textBoxid_TextChanged;
             // 
             // button1
             // 
@@ -196,7 +211,6 @@
             label8.Size = new Size(28, 15);
             label8.TabIndex = 14;
             label8.Text = "min";
-            label8.Click += label8_Click;
             // 
             // label7
             // 
@@ -222,7 +236,6 @@
             textBoxnameMAX.Name = "textBoxnameMAX";
             textBoxnameMAX.Size = new Size(100, 23);
             textBoxnameMAX.TabIndex = 8;
-            textBoxnameMAX.TextChanged += textBox2_TextChanged;
             // 
             // label5
             // 
@@ -239,7 +252,6 @@
             textBoxidMax.Name = "textBoxidMax";
             textBoxidMax.Size = new Size(100, 23);
             textBoxidMax.TabIndex = 7;
-            textBoxidMax.TextChanged += textBox3_TextChanged;
             // 
             // label6
             // 
@@ -257,11 +269,155 @@
             textBoxscoreMAX.Size = new Size(100, 23);
             textBoxscoreMAX.TabIndex = 9;
             // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Location = new Point(863, 61);
+            label10.Name = "label10";
+            label10.Size = new Size(15, 15);
+            label10.TabIndex = 2;
+            label10.Text = "A";
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Location = new Point(863, 88);
+            label11.Name = "label11";
+            label11.Size = new Size(22, 15);
+            label11.TabIndex = 3;
+            label11.Text = "B+";
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Location = new Point(863, 115);
+            label12.Name = "label12";
+            label12.Size = new Size(14, 15);
+            label12.TabIndex = 4;
+            label12.Text = "B";
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.Location = new Point(863, 140);
+            label13.Name = "label13";
+            label13.Size = new Size(23, 15);
+            label13.TabIndex = 5;
+            label13.Text = "C+";
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Location = new Point(863, 166);
+            label14.Name = "label14";
+            label14.Size = new Size(15, 15);
+            label14.TabIndex = 6;
+            label14.Text = "C";
+            // 
+            // label15
+            // 
+            label15.AutoSize = true;
+            label15.Location = new Point(863, 200);
+            label15.Name = "label15";
+            label15.Size = new Size(23, 15);
+            label15.TabIndex = 9;
+            label15.Text = "D+";
+            // 
+            // label16
+            // 
+            label16.AutoSize = true;
+            label16.Location = new Point(863, 230);
+            label16.Name = "label16";
+            label16.Size = new Size(15, 15);
+            label16.TabIndex = 8;
+            label16.Text = "D";
+            // 
+            // label17
+            // 
+            label17.AutoSize = true;
+            label17.Location = new Point(864, 262);
+            label17.Name = "label17";
+            label17.Size = new Size(13, 15);
+            label17.TabIndex = 7;
+            label17.Text = "F";
+            // 
+            // textBoxA
+            // 
+            textBoxA.Location = new Point(889, 53);
+            textBoxA.Name = "textBoxA";
+            textBoxA.Size = new Size(100, 23);
+            textBoxA.TabIndex = 20;
+            // 
+            // textBoxB
+            // 
+            textBoxB.Location = new Point(889, 107);
+            textBoxB.Name = "textBoxB";
+            textBoxB.Size = new Size(100, 23);
+            textBoxB.TabIndex = 21;
+            // 
+            // textBoxBPLUS
+            // 
+            textBoxBPLUS.Location = new Point(889, 80);
+            textBoxBPLUS.Name = "textBoxBPLUS";
+            textBoxBPLUS.Size = new Size(100, 23);
+            textBoxBPLUS.TabIndex = 22;
+            // 
+            // textBoxCPLUS
+            // 
+            textBoxCPLUS.Location = new Point(889, 137);
+            textBoxCPLUS.Name = "textBoxCPLUS";
+            textBoxCPLUS.Size = new Size(100, 23);
+            textBoxCPLUS.TabIndex = 23;
+            // 
+            // textBoxC
+            // 
+            textBoxC.Location = new Point(889, 163);
+            textBoxC.Name = "textBoxC";
+            textBoxC.Size = new Size(100, 23);
+            textBoxC.TabIndex = 24;
+            // 
+            // textBoxDPLUS
+            // 
+            textBoxDPLUS.Location = new Point(889, 195);
+            textBoxDPLUS.Name = "textBoxDPLUS";
+            textBoxDPLUS.Size = new Size(100, 23);
+            textBoxDPLUS.TabIndex = 25;
+            // 
+            // textBoxF
+            // 
+            textBoxF.Location = new Point(889, 259);
+            textBoxF.Name = "textBoxF";
+            textBoxF.Size = new Size(100, 23);
+            textBoxF.TabIndex = 26;
+            // 
+            // textBoxD
+            // 
+            textBoxD.Location = new Point(889, 224);
+            textBoxD.Name = "textBoxD";
+            textBoxD.Size = new Size(100, 23);
+            textBoxD.TabIndex = 27;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1141, 450);
+            ClientSize = new Size(1201, 432);
+            Controls.Add(textBoxD);
+            Controls.Add(textBoxF);
+            Controls.Add(textBoxDPLUS);
+            Controls.Add(textBoxC);
+            Controls.Add(textBoxCPLUS);
+            Controls.Add(textBoxBPLUS);
+            Controls.Add(textBoxB);
+            Controls.Add(textBoxA);
+            Controls.Add(label15);
+            Controls.Add(label16);
+            Controls.Add(label17);
+            Controls.Add(label14);
+            Controls.Add(label13);
+            Controls.Add(label12);
+            Controls.Add(label11);
+            Controls.Add(label10);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
             Name = "Form1";
@@ -271,6 +427,7 @@
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -297,5 +454,21 @@
         private TextBox textBoxnamemin;
         private TextBox textBoxMin;
         private TextBox textBox6;
+        private Label label10;
+        private Label label11;
+        private Label label12;
+        private Label label13;
+        private Label label14;
+        private Label label15;
+        private Label label16;
+        private Label label17;
+        private TextBox textBoxA;
+        private TextBox textBoxB;
+        private TextBox textBoxBPLUS;
+        private TextBox textBoxCPLUS;
+        private TextBox textBoxC;
+        private TextBox textBoxDPLUS;
+        private TextBox textBoxF;
+        private TextBox textBoxD;
     }
 }
